@@ -1,0 +1,13 @@
+###
+# build directories
+###
+bd.gr-iio/
+bd.libad9361-iio/
+bd.libiio/
+
+###
+# source repos
+###
+gr-iio/
+libad9361-iio/
+libiio/

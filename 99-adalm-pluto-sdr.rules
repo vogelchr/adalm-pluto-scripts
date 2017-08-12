@@ -1,0 +1,5 @@
+
+# Bus 001 Device 008: ID 0456:b673 Analog Devices, Inc. 
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0456", ATTRS{idProduct}=="b673", GROUP="users", MODE="0660"
+
+
