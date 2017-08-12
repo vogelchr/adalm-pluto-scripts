@@ -10,3 +10,8 @@ install.sh :
 	create symlinks for python libraries, copy the udev rules file
 	to the appropriate place, add /opt/pluto/lib to ld.so.conf.d.
 
+
+Before you run gnuradio, add the following to ~/.gnuradio/config.conf:
+
+	[grc]
+	local_blocks_path = /opt/pluto/share/gnuradio/grc/blocks
