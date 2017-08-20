@@ -1,0 +1,11 @@
+prefix=/opt/pluto
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+lib64dir=${exec_prefix}/lib64
+includedir=${prefix}/include
+
+Name: ADALM Pluto IIO Library
+Description: C Utility Library
+Version: 0.0
+Libs: -L${libdir} -Wl,-rpath,${libdir} -L${lib64dir} -Wl,-rpath,${lib64dir} -lad9361 -liio
+Cflags: -I${includedir}

@@ -24,3 +24,10 @@ if ! [ -e "/etc/udev/rules.d/99-adalm-pluto-sdr.rules" ] ; then
 	echo "check with /opt/pluto/bin/iio_info -s."
 	udevadm control -R
 fi
+
+if ! [ -e "/opt/pluto/lib/pkgconfig/pluto_iio.pc" ] ; then
+	if ! [ -d "/opt/pluto/lib/pkgconfig" ] ; then
+		mkdir -p "/opt/pluto/lib/pkgconfig"
+	fi
+	cp pluto_iio.pc /opt/pluto/lib/pkgconfig
+fi
