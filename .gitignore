@@ -11,3 +11,10 @@ bd.libiio/
 gr-iio/
 libad9361-iio/
 libiio/
+
+*.o
+*.d
+*~
+
+pluto_fdx_test/pluto_fdx_test
+
